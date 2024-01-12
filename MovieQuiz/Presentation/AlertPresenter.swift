@@ -24,13 +24,13 @@ class AlertPresenter: AlertPresenterProtocol{
         self.delegate = delegate
     }
     
-    private func setAlertModel(alertModel : AlertModel){
-        self.alertModel?.text = alertModel.text
-        self.alertModel?.title = alertModel.title
-        self.alertModel?.buttonText = alertModel.buttonText
-        self.alertModel?.completion = {
-        }
-    }
+//    private func setAlertModel(alertModel : AlertModel){
+//        self.alertModel?.text = alertModel.text
+//        self.alertModel?.title = alertModel.title
+//        self.alertModel?.buttonText = alertModel.buttonText
+//        self.alertModel?.completion = {
+//        }
+//    }
     
     func showAlert(alertModel : AlertModel) {
         
@@ -38,7 +38,7 @@ class AlertPresenter: AlertPresenterProtocol{
             title: alertModel.title,
             message: alertModel.text,
             preferredStyle: .alert)
-        alert.view.accessibilityIdentifier = "Game results"
+        alert.view.accessibilityIdentifier = alertModel.identifier
         let action = UIAlertAction(title: alertModel.buttonText, style: .default){ _ in
             alertModel.completion()
         }

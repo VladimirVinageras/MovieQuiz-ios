@@ -11,5 +11,6 @@ struct AlertModel {
     var title: String
     var text:  String
     var buttonText: String
+    var identifier: String
     var completion : () -> Void
 }
