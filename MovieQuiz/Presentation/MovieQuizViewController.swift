@@ -9,7 +9,7 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
     
     private var movieQuizPresenter : MovieQuizPresenter!
     
-//MARK: - App variables
+//MARK: - Outlet variables
     @IBOutlet private weak var counterLabel: UILabel!
     @IBOutlet weak var questionTitleLabel: UILabel!
     @IBOutlet private weak var previewImageView: UIImageView!
@@ -18,7 +18,7 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
     @IBOutlet weak var yesAnswerButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-// MARK: - System "must be" fucntions
+// MARK: - System "must be" functions
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

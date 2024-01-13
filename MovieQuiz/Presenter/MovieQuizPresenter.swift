@@ -18,7 +18,7 @@ final class MovieQuizPresenter {
     private var statisticService : StatisticService?
            
     
-    //MARK: - Outlets variables
+    //MARK: - App variables
     private let questionsAmount: Int = 10
     private var currentQuestion: QuizQuestion?
     private var currentQuestionIndex: Int = 0
