@@ -24,14 +24,6 @@ class AlertPresenter: AlertPresenterProtocol{
         self.delegate = delegate
     }
     
-//    private func setAlertModel(alertModel : AlertModel){
-//        self.alertModel?.text = alertModel.text
-//        self.alertModel?.title = alertModel.title
-//        self.alertModel?.buttonText = alertModel.buttonText
-//        self.alertModel?.completion = {
-//        }
-//    }
-    
     func showAlert(alertModel : AlertModel) {
         
         let alert = UIAlertController(
